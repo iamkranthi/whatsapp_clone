@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:whatsapp_clone/views/pages/home/components/chat_cards.dart';
+import 'package:whatsapp_clone/views/widgets/chat_cards.dart';
 
 class SilverToBoxAdapterWidget extends StatelessWidget {
   const SilverToBoxAdapterWidget({

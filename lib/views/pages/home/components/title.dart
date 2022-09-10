@@ -16,7 +16,7 @@ class TitleWidget extends StatelessWidget {
             Row(
               children: [
                 horizontalSpacer(55),
-                Icon(logo, color: Colors.black, size: 28),
+                Icon(logo,  size: 28),
                 horizontalSpacer(10),
                 Text(title, style: headingSTYLE),
               ],
