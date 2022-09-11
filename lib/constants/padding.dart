@@ -1,4 +1,3 @@
-class APPSIZES {
-  static const double pagePADDING = 20.0;
-  static const double elemntPADDING=16.0;
+class CHATWIDGETPADDING {
+  static const double chatSPACER = 10.0;
 }

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:whatsapp_clone/constants/text.dart';
-import 'package:whatsapp_clone/utils/helpers.dart';
+import 'package:whatsapp_clone/exports/exports.dart';
 
 class TitleWidget extends StatelessWidget {
   final String title;

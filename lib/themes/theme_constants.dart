@@ -2,8 +2,14 @@ import 'package:flutter/material.dart';
 
 class Themes {
   static final light = ThemeData(
-    scaffoldBackgroundColor: Colors.amber,
-    backgroundColor: Colors.amber,
+    scaffoldBackgroundColor: Colors.white,
+    appBarTheme: const AppBarTheme(
+      backgroundColor: Colors.white,
+      elevation: 10,
+      iconTheme: IconThemeData(color: Colors.black),
+    
+    ),
+  
     iconTheme: const IconThemeData(color: Colors.amber),
   );
   static final dark = ThemeData(

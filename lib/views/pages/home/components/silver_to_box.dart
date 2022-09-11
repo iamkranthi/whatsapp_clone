@@ -10,10 +10,17 @@ class SilverToBoxAdapterWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return SliverToBoxAdapter(
       child: ListView.builder(
-          primary: false,
-          shrinkWrap: true,
-          itemCount: 20,
-          itemBuilder: (context, index) => const ChatCards()),
+        primary: false,
+        shrinkWrap: true,
+        itemCount: 20,
+        scrollDirection: Axis.vertical,
+        itemBuilder: (context, index) => const ChatCards(
+          lastmesssage: 'Made with love in Flutter',
+          tickEmoji: '✅ ✅',
+          time: '9:40Pm',
+          username: 'Flutter',
+        ),
+      ),
     );
   }
 }

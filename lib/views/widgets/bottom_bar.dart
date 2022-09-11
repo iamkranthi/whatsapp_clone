@@ -1,6 +1,6 @@
-import 'package:curved_navigation_bar/curved_navigation_bar.dart';
+import 'package:whatsapp_clone/exports/exports.dart';
 import 'package:flutter/material.dart';
-import 'package:iconsax/iconsax.dart';
+
 
 class CustomBottomBar extends StatelessWidget {
   const CustomBottomBar({
