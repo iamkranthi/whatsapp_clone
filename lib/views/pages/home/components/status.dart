@@ -48,16 +48,19 @@ class AddStatusWidget extends StatelessWidget {
       Card(
         margin: const EdgeInsets.only(left: 20, top: 120, right: 20),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-        child: const RoundedRectangularContanier(
+        child: Container(
           height: 60,
           width: 60,
-          radius: 10,
-          child: Text('Add status', textAlign: TextAlign.center),
+         decoration:  BoxDecoration(
+          border: Border.all(color: Colors.black),
+          borderRadius: BorderRadius.circular(12)
+         ),
+          child: const Text('Add status', textAlign: TextAlign.center),
         ),
       ),
       const Positioned(
-        top: 155,
-        left: 50,
+        top: 158,
+        left: 40,
         child: CircleAvatar(
           radius: 9.5,
           child: Icon(

@@ -18,7 +18,7 @@ export 'package:whatsapp_clone/constants/text_styles.dart';//textstyle
 export 'package:whatsapp_clone/themes/colors.dart';//colors
 export 'package:whatsapp_clone/constants/text_styles.dart';//textstyle
 export 'package:whatsapp_clone/constants/images.dart';//constant images
-
+export 'package:whatsapp_clone/themes/theme_constants.dart';
 
 //*widgets
 //*universal widget

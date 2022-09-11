@@ -1,25 +1,10 @@
-import 'dart:ui';
+import 'package:flutter/material.dart';
 
-class DoubleShade {
-  final Color lightShade;
-  final Color darkShade;
+const lightAppColor = Color.fromRGBO(255, 240, 245, 1);
+const lightCardColor = Color.fromRGBO(255, 250, 250, 1);
+const lightCardElevationColor = Color.fromRGBO(255, 250, 240, 1);
+const lightButtonBackgroundColor = Color.fromRGBO(255, 222, 173, 1);
 
-  DoubleShade(this.lightShade, this.darkShade);
-}
-
-const Color backgroundCOLOR = Color(0xFFFFFFFF);
-const Color greenColor = Color(0xFF5CE27F);
-const Color yellowColor = Color(0xFFFFE12D);
-const Color redColor = Color(0xFFE25C5C);
-DoubleShade greenGradient = DoubleShade(
-  const Color(0xFF5CE27F),
-  const Color(0xFF5CABE2),
-);
-DoubleShade blackColor = DoubleShade(
-  const Color(0xFF313131),
-  const Color(0xFF121212),
-);
-DoubleShade grayColor = DoubleShade(
-  const Color(0xFFB1B1B1),
-  const Color(0xFFEFEFEF),
-);
+const darkAppColor = Color.fromRGBO(22, 22, 22, 1);
+const darkCardColor = Color.fromRGBO(0, 0, 0, 1);
+const darkShadowColor = Color.fromRGBO(255, 0, 0, 1);

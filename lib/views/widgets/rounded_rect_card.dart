@@ -9,12 +9,10 @@ class RoundedRectCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       elevation: 20,
-      shadowColor: Colors.amber,
+      
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(20),
-        side: const BorderSide(
-          color: Colors.black26,
-        ),
+       
       ),
       child: Padding(
         padding: const EdgeInsets.symmetric(

@@ -3,10 +3,10 @@ import 'package:google_fonts/google_fonts.dart';
 
 TextStyle get headingSTYLE {
   return GoogleFonts.poppins(
-      fontSize: 24, fontWeight: FontWeight.bold, color: Colors.black);
+      fontSize: 24, fontWeight: FontWeight.bold,color: Colors.green );
 }
 
 TextStyle get userNameStyle {
   return GoogleFonts.poppins(
-      fontSize: 16, fontWeight: FontWeight.w500, color: Colors.black);
+      fontSize: 16, fontWeight: FontWeight.w500, );
 }

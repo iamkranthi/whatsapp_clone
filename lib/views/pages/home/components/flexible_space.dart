@@ -17,6 +17,9 @@ class FlexibleSpaceStatusBar extends StatelessWidget {
       leading: const Icon(Icons.menu),
       expandedHeight: 200,
       pinned: true,
+     // elevation: 10,
+      floating: true,
+      snap: false,
       actions: const [
         ThemeSwitcher(),
       ],
