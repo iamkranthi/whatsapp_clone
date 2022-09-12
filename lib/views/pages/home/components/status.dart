@@ -41,38 +41,3 @@ class StatusBarWidget extends StatelessWidget {
     ]);
   }
 }
-
-class AddStatusWidget extends StatelessWidget {
-  const AddStatusWidget({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Stack(children: [
-      Card(
-        margin: const EdgeInsets.only(left: 20, top: 120, right: 20),
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-        child: Container(
-          height: 60,
-          width: 60,
-          padding: const EdgeInsets.only(top: 4),
-          decoration: BoxDecoration(
-              border: Border.all(color: Colors.green, width: 2),
-              borderRadius: BorderRadius.circular(12)),
-          child: const Text('Add status', textAlign: TextAlign.center),
-        ),
-      ),
-      Positioned(
-        top: 156.4,
-        left: 40,
-        child: CircleAvatar(
-          radius: 9.5,
-          backgroundColor: Colors.blue.shade100,
-          child: const Icon(
-            Iconsax.add,
-            size: 20,
-          ),
-        ),
-      )
-    ]);
-  }
-}
