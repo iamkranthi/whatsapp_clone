@@ -1,8 +1,11 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:whatsapp_clone/exports/exports.dart';
+
 class StatusBarWidget extends StatelessWidget {
-  const StatusBarWidget({super.key});
+  final String image;
+  final String simage;
+  const StatusBarWidget({super.key, required this.image, required this.simage});
 
   @override
   Widget build(BuildContext context) {
@@ -18,20 +21,20 @@ class StatusBarWidget extends StatelessWidget {
             borderRadius: BorderRadius.circular(16),
             child: ImageFiltered(
               imageFilter: ImageFilter.blur(sigmaX: 1.3, sigmaY: 1.3),
-              child: const Image(
-                image: NetworkImage(NETWORKIMAGES.status),
-                fit: BoxFit.fitHeight,
+              child:  Image(
+                image: NetworkImage(simage),
+                fit: BoxFit.fill,
               ),
             ),
           ),
         ),
       ),
-      const Positioned(
+       Positioned(
         top: 170,
         left: 35,
         child: CircleAvatar(
           backgroundImage: NetworkImage(
-            NETWORKIMAGES.chatDp,
+            image
           ),
         ),
       )
@@ -52,14 +55,13 @@ class AddStatusWidget extends StatelessWidget {
           height: 60,
           width: 60,
           padding: const EdgeInsets.only(top: 4),
-         decoration:  BoxDecoration(
-          border: Border.all(color: Colors.green,width: 2),
-          borderRadius: BorderRadius.circular(12)
-         ),
+          decoration: BoxDecoration(
+              border: Border.all(color: Colors.green, width: 2),
+              borderRadius: BorderRadius.circular(12)),
           child: const Text('Add status', textAlign: TextAlign.center),
         ),
       ),
-       Positioned(
+      Positioned(
         top: 156.4,
         left: 40,
         child: CircleAvatar(

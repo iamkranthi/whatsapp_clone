@@ -1,18 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:whatsapp_clone/exports/exports.dart';
 
-
 class ChatCards extends StatelessWidget {
   final String username;
   final String lastmesssage;
   final String time;
   final String tickEmoji;
-  const ChatCards(
-      {super.key,
-      required this.username,
-      required this.lastmesssage,
-      required this.time,
-      required this.tickEmoji});
+  final String image;
+  const ChatCards({
+    super.key,
+    required this.username,
+    required this.lastmesssage,
+    required this.time,
+    required this.tickEmoji,
+    required this.image,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -26,9 +28,10 @@ class ChatCards extends StatelessWidget {
             child: Stack(
               children: [
                 Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
                   children: [
-                    const CircleAvatar(
-                      backgroundImage: NetworkImage(NETWORKIMAGES.chatDp),
+                    CircleAvatar(
+                      backgroundImage: NetworkImage(image),
                     ),
                     horizontalSpacer(10),
                     Column(
@@ -36,10 +39,22 @@ class ChatCards extends StatelessWidget {
                       children: [
                         Text(username, style: userNameStyle),
                         verticalSpacer(10),
-                        Text(lastmesssage),
+                        SizedBox(
+                          width: 145,
+                          child: Text(
+                            lastmesssage,
+                            overflow: TextOverflow.ellipsis,
+                            maxLines: 1,
+                           softWrap: false,
+                          ),
+                        ),
                       ],
                     ),
-                    horizontalSpacer(100),
+                  ],
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.end,
                       children: [

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:whatsapp_clone/exports/exports.dart';
+import 'package:whatsapp_clone/models/info.dart';
 
 class FlexibleSpaceStatusBar extends StatelessWidget {
   const FlexibleSpaceStatusBar({
@@ -8,30 +9,23 @@ class FlexibleSpaceStatusBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
-    //?Appbar 
+    //?Appbar
 
     return SliverAppBar(
       centerTitle: true,
-    
+
       title: const TitleWidget(title: 'WhatsApp', logo: Icons.whatsapp),
       leading: const Icon(Icons.menu),
       expandedHeight: 200,
       pinned: true,
-     // elevation: 10,
+      // elevation: 10,
       floating: true,
       snap: false,
       actions: const [
         ThemeSwitcher(),
       ],
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-      flexibleSpace: Stack(
-        children: const [
-          StatusItems(),
-        ],
-        
-      ),
-      
+      flexibleSpace:const StatusItems(),
     );
   }
 }
@@ -44,25 +38,15 @@ class StatusItems extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FlexibleSpaceBar(
-      background: ListView(
+      background: ListView.builder(
+        itemCount: info.length,
         scrollDirection: Axis.horizontal,
-        children: [
-          Stack(
-            children: [
-              Row(
-                children: const [
-                  AddStatusWidget(),
-                  StatusBarWidget(),
-                  StatusBarWidget(),
-                  StatusBarWidget(),
-                  StatusBarWidget(),
-                  StatusBarWidget(),
-                  StatusBarWidget(),
-                ],
-              ),
-            ],
-          ),
-        ],
+        itemBuilder: (context, index) {
+          return StatusBarWidget(
+            image: info[index]['profilePic'].toString(),
+            simage: info[index]['stories'].toString(),
+          );
+        },
       ),
     );
   }
