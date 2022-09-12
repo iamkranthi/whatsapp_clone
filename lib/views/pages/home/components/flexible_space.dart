@@ -13,6 +13,7 @@ class FlexibleSpaceStatusBar extends StatelessWidget {
 
     return SliverAppBar(
       centerTitle: true,
+    
       title: const TitleWidget(title: 'WhatsApp', logo: Icons.whatsapp),
       leading: const Icon(Icons.menu),
       expandedHeight: 200,
@@ -28,7 +29,9 @@ class FlexibleSpaceStatusBar extends StatelessWidget {
         children: const [
           StatusItems(),
         ],
+        
       ),
+      
     );
   }
 }

@@ -51,19 +51,21 @@ class AddStatusWidget extends StatelessWidget {
         child: Container(
           height: 60,
           width: 60,
+          padding: const EdgeInsets.only(top: 4),
          decoration:  BoxDecoration(
-          border: Border.all(color: Colors.black),
+          border: Border.all(color: Colors.green,width: 2),
           borderRadius: BorderRadius.circular(12)
          ),
           child: const Text('Add status', textAlign: TextAlign.center),
         ),
       ),
-      const Positioned(
-        top: 158,
+       Positioned(
+        top: 156.4,
         left: 40,
         child: CircleAvatar(
           radius: 9.5,
-          child: Icon(
+          backgroundColor: Colors.blue.shade100,
+          child: const Icon(
             Iconsax.add,
             size: 20,
           ),

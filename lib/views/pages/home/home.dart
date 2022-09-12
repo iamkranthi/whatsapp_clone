@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:whatsapp_clone/views/pages/home/components/flexible_space.dart';
-import 'package:whatsapp_clone/views/pages/home/components/silver_to_box.dart';
-
-import 'package:whatsapp_clone/views/widgets/bottom_bar.dart';
+import 'package:whatsapp_clone/exports/exports.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -12,25 +9,16 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-
-
   @override
   Widget build(BuildContext context) {
-   
-    return const Scaffold(
-     
-      body:  CustomScrollView(
+    return Scaffold(
+      body: const CustomScrollView(
         slivers: [
           FlexibleSpaceStatusBar(),
-         SilverToBoxAdapterWidget(),
+          SilverToBoxAdapterWidget(),
         ],
       ),
-      bottomNavigationBar: SizedBox(
-        height: 90,
-        child: CustomBottomBar(),
-      ),
+      bottomNavigationBar: BottomBar(),
     );
   }
 }
-
-
