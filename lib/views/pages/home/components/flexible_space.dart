@@ -1,3 +1,4 @@
+import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/material.dart';
 import 'package:whatsapp_clone/exports/exports.dart';
 import 'package:whatsapp_clone/models/info.dart';
@@ -20,13 +21,9 @@ class FlexibleSpaceStatusBar extends StatelessWidget {
       // elevation: 10,
       floating: true,
       snap: false,
-      actions: const [
-        ThemeSwitcher(),
-      ],
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+      actions: const [AddStatusWidget()],
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(11)),
       flexibleSpace: const StatusItems(),
-
-      
     );
   }
 }
@@ -39,24 +36,20 @@ class AddStatusWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(top:10.0),
-      child: Container(
-        height: 50,
-        width: 150,
-        decoration: BoxDecoration(
-          border: Border.all(color: Colors.green,width: 2),
-          borderRadius: const BorderRadius.all(Radius.circular(20))
+    return Column(
+      children: [
+        verticalSpacer(4),
+        DottedBorder(
+          borderType: BorderType.Circle,
+          radius: const Radius.circular(10),
+          child:const Icon(Icons.add_circle),
         ),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            const Text('Add your story'),
-            horizontalSpacer(10),
-            const Icon(Icons.add_circle_sharp),
-          ],
-        ),
-      ),
+        verticalSpacer(4),
+        const Text(
+          'Add status',
+          style: TextStyle(color: Colors.black),
+        )
+      ],
     );
   }
 }
