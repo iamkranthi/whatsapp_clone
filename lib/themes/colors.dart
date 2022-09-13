@@ -5,6 +5,6 @@ const lightCardColor = Color.fromRGBO(255, 250, 250, 1);
 const lightCardElevationColor = Color.fromRGBO(255, 250, 240, 1);
 const lightButtonBackgroundColor = Color.fromRGBO(255, 222, 173, 1);
 
-const darkAppColor = Color.fromRGBO(22, 22, 22, 1);
+
 const darkCardColor = Color.fromRGBO(0, 0, 0, 1);
-const darkShadowColor = Color.fromRGBO(255, 0, 0, 1);
+

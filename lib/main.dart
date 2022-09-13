@@ -23,9 +23,10 @@ class _MyAppState extends State<MyApp> {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: Themes.light,
-      darkTheme: Themes.dark,
+     
       themeMode: ThemeService().theme,
       home: const HomePage(),
+      
     );
   }
 }

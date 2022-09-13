@@ -2,7 +2,7 @@
 export 'package:whatsapp_clone/views/pages/home/home.dart'; //homepage
 export  'package:whatsapp_clone/views/pages/home/calls/calls_dedicated_page.dart';//calls page
 export 'package:whatsapp_clone/views/pages/home/chats/chats_dedicated_page.dart';//chats page
-
+export 'package:whatsapp_clone/models/info.dart';//info model
 
 //*services
 export  'package:whatsapp_clone/services/theme_services.dart';
@@ -29,7 +29,6 @@ export 'package:whatsapp_clone/views/widgets/rounded_rect_card.dart';//rounded c
 
 //*homeWidgets
 export 'package:whatsapp_clone/views/pages/home/components/status.dart';
-export 'package:whatsapp_clone/views/pages/home/components/theme_switcher.dart';
 export 'package:whatsapp_clone/views/pages/home/components/title.dart';
 export 'package:whatsapp_clone/views/pages/home/components/flexible_space.dart';
 export 'package:whatsapp_clone/views/pages/home/components/silver_to_box.dart';
@@ -52,4 +51,4 @@ export 'package:whatsapp_clone/views/pages/home/components/silver_to_box.dart';
 
 export 'package:iconsax/iconsax.dart';//iconsax package
 export 'package:curved_navigation_bar/curved_navigation_bar.dart';//bootom nav bar
-
+export 'package:dotted_border/dotted_border.dart';//dotted border

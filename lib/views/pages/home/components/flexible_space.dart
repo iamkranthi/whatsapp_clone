@@ -1,7 +1,5 @@
-import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/material.dart';
 import 'package:whatsapp_clone/exports/exports.dart';
-import 'package:whatsapp_clone/models/info.dart';
 
 class FlexibleSpaceStatusBar extends StatelessWidget {
   const FlexibleSpaceStatusBar({
@@ -42,7 +40,7 @@ class AddStatusWidget extends StatelessWidget {
         DottedBorder(
           borderType: BorderType.Circle,
           radius: const Radius.circular(10),
-          child:const Icon(Icons.add_circle),
+          child: const Icon(Icons.add_circle),
         ),
         verticalSpacer(4),
         const Text(

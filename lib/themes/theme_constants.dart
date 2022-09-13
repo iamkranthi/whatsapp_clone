@@ -19,26 +19,11 @@ class Themes {
       backgroundColor: darkCardColor,
       splashColor: lightCardColor,
     ),
+    pageTransitionsTheme: const PageTransitionsTheme(builders: {
+      TargetPlatform.android: CupertinoPageTransitionsBuilder(),
+    }),
+    
   );
 
-//*DarkTheme
 
-  static final dark = ThemeData(
-    scaffoldBackgroundColor: darkCardColor,
-    appBarTheme: const AppBarTheme(
-      backgroundColor: darkCardColor,
-      elevation: 10,
-      iconTheme: IconThemeData(color: Colors.white),
-    ),
-    brightness: Brightness.dark,
-    iconTheme: const IconThemeData(color: Colors.blueGrey),
-    cardTheme: const CardTheme(
-      color: darkCardColor,
-      shadowColor: Colors.white24,
-    ),
-     floatingActionButtonTheme: const FloatingActionButtonThemeData(
-      backgroundColor: lightAppColor,
-      splashColor: darkCardColor,
-    ),
-  );
 }
