@@ -9,11 +9,10 @@ class FlexibleSpaceStatusBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    //?Appbar
+    //*Appbar
 
     return SliverAppBar(
       centerTitle: true,
-
       title: const TitleWidget(title: 'WhatsApp', logo: Icons.whatsapp),
       leading: const Icon(Icons.menu),
       expandedHeight: 200,
@@ -25,11 +24,44 @@ class FlexibleSpaceStatusBar extends StatelessWidget {
         ThemeSwitcher(),
       ],
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-      flexibleSpace:const StatusItems(),
+      flexibleSpace: const StatusItems(),
+
+      
     );
   }
 }
 
+//*add your story widget
+class AddStatusWidget extends StatelessWidget {
+  const AddStatusWidget({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.only(top:10.0),
+      child: Container(
+        height: 50,
+        width: 150,
+        decoration: BoxDecoration(
+          border: Border.all(color: Colors.green,width: 2),
+          borderRadius: const BorderRadius.all(Radius.circular(20))
+        ),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const Text('Add your story'),
+            horizontalSpacer(10),
+            const Icon(Icons.add_circle_sharp),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+//*stories builder
 class StatusItems extends StatelessWidget {
   const StatusItems({
     Key? key,
