@@ -1,4 +1,4 @@
-const info = [
+const chats = [
   {
     'name': 'Kranthi Codes',
     'message': 'Hey, how are you doing?',

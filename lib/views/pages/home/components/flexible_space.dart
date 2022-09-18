@@ -62,12 +62,12 @@ class StatusItems extends StatelessWidget {
   Widget build(BuildContext context) {
     return FlexibleSpaceBar(
       background: ListView.builder(
-        itemCount: info.length,
+        itemCount: chats.length,
         scrollDirection: Axis.horizontal,
         itemBuilder: (context, index) {
           return StatusBarWidget(
-            image: info[index]['profilePic'].toString(),
-            simage: info[index]['stories'].toString(),
+            image: chats[index]['profilePic'].toString(),
+            simage: chats[index]['stories'].toString(),
           );
         },
       ),

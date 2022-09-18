@@ -12,12 +12,14 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-        body: CustomScrollView(
-          slivers: [
-            FlexibleSpaceStatusBar(),
-            SilverToBoxAdapterWidget(),
-          ],
-        ),
-        bottomNavigationBar: BottomBar());
+      body: CustomScrollView(
+        slivers: [
+          FlexibleSpaceStatusBar(),
+          SilverToBoxAdapterWidget(),
+        ],
+      ),
+      bottomNavigationBar: BottomBar(),
+      
+    );
   }
 }

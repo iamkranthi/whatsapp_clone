@@ -31,6 +31,8 @@ class ChatCards extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     CircleAvatar(
+                     
+                      backgroundColor: Colors.transparent,
                       backgroundImage: NetworkImage(image),
                     ),
                     horizontalSpacer(10),

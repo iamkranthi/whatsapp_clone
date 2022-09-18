@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:whatsapp_clone/models/info.dart';
+import 'package:whatsapp_clone/models/chat_info.dart';
 import 'package:whatsapp_clone/views/widgets/chat_cards.dart';
 
 class SilverToBoxAdapterWidget extends StatelessWidget {
@@ -13,15 +13,15 @@ class SilverToBoxAdapterWidget extends StatelessWidget {
       child: ListView.builder(
           primary: false,
           shrinkWrap: true,
-          itemCount: info.length,
+          itemCount: chats.length,
           scrollDirection: Axis.vertical,
           itemBuilder: (context, index) {
             return ChatCards(
-              username: info[index]['name'].toString(),
-              lastmesssage: info[index]['message'].toString(),
-              time: info[index]['time'].toString(),
+              username: chats[index]['name'].toString(),
+              lastmesssage: chats[index]['message'].toString(),
+              time: chats[index]['time'].toString(),
               tickEmoji: '✅ ✅',
-              image: info[index]['profilePic'].toString(),
+              image: chats[index]['profilePic'].toString(),
             );
           }),
     );
