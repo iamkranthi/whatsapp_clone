@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:whatsapp_clone/models/chat_info.dart';
-import 'package:whatsapp_clone/views/widgets/chat_cards.dart';
+import 'package:whatsapp_clone/exports/exports.dart';
 
 class SilverToBoxAdapterWidget extends StatelessWidget {
   const SilverToBoxAdapterWidget({
@@ -20,7 +19,7 @@ class SilverToBoxAdapterWidget extends StatelessWidget {
               username: chats[index]['name'].toString(),
               lastmesssage: chats[index]['message'].toString(),
               time: chats[index]['time'].toString(),
-              tickEmoji: '✅ ✅',
+             tickEmoji: '✅ ✅',
               image: chats[index]['profilePic'].toString(),
             );
           }),

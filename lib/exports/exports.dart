@@ -6,7 +6,7 @@ export 'package:whatsapp_clone/models/chat_info.dart';//info model
 export 'package:whatsapp_clone/views/pages/chats/components/chats_view.dart';
 export 'package:whatsapp_clone/views/pages/chats/components/groups_view.dart';
 
-
+export 'package:whatsapp_clone/views/pages/calls/components/calls_view.dart';
 
 
 //*services

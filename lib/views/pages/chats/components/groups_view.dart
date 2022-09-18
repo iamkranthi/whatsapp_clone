@@ -16,7 +16,7 @@ class GroupsView extends StatelessWidget {
           username: groups[index]['name'].toString(),
           lastmesssage: groups[index]['message'].toString(),
           time: groups[index]['time'].toString(),
-          tickEmoji: '✅ ✅',
+         tickEmoji: '✅ ✅',
           image: groups[index]['profilePic'].toString(),
         );
       },

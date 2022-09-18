@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:whatsapp_clone/exports/exports.dart';
 
+import '../../../../models/calls_info.dart';
 
-class ChatsView extends StatelessWidget {
-  const ChatsView({
+
+class CallsView extends StatelessWidget {
+  const CallsView({
     Key? key,
   }) : super(key: key);
 
@@ -12,15 +14,15 @@ class ChatsView extends StatelessWidget {
     return ListView.builder(
       primary: false,
       shrinkWrap: true,
-      itemCount: chats.length,
+      itemCount: calls.length,
       scrollDirection: Axis.vertical,
       itemBuilder: (context, index) {
         return ChatCards(
-          username: chats[index]['name'].toString(),
-          lastmesssage: chats[index]['message'].toString(),
-          time: chats[index]['time'].toString(),
-           tickEmoji: '✅ ✅',
-          image: chats[index]['profilePic'].toString(),
+          username: calls[index]['name'].toString(),
+          lastmesssage: calls[index]['message'].toString(),
+          time: calls[index]['time'].toString(),
+          tickEmoji: '📞',
+          image: calls[index]['profilePic'].toString(),
         );
       },
     );
