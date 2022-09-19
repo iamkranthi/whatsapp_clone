@@ -18,11 +18,13 @@ class ChatCards extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
+    double cardsize = size.shortestSide - 20;
     return Row(
       children: [
         RoundedRectangularContanier(
           height: 90,
-          width: 400,
+          width: cardsize,
           radius: 20,
           child: RoundedRectCard(
             child: Stack(
@@ -31,7 +33,6 @@ class ChatCards extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     CircleAvatar(
-                     
                       backgroundColor: Colors.transparent,
                       backgroundImage: NetworkImage(image),
                     ),
@@ -47,7 +48,7 @@ class ChatCards extends StatelessWidget {
                             lastmesssage,
                             overflow: TextOverflow.ellipsis,
                             maxLines: 1,
-                           softWrap: false,
+                            softWrap: false,
                           ),
                         ),
                       ],
