@@ -18,7 +18,7 @@ class FlexibleSpaceStatusBar extends StatelessWidget {
       title: const TitleWidget(title: 'WhatsApp', logo: Icons.whatsapp),
       leading: Builder(
         builder: (context) {
-          IconButton(
+          return IconButton(
             onPressed: () => Scaffold.of(context).openDrawer(),
             icon: const CircleAvatar(
               backgroundImage: NetworkImage(NETWORKIMAGES.chatDp),
