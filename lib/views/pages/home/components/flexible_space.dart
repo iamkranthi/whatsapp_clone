@@ -8,12 +8,24 @@ class FlexibleSpaceStatusBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var scafoldKey = GlobalKey<ScaffoldState>();
     //*Appbar
 
     return SliverAppBar(
+      automaticallyImplyLeading: false,
+      key: scafoldKey,
       centerTitle: true,
       title: const TitleWidget(title: 'WhatsApp', logo: Icons.whatsapp),
-      leading: const Icon(Icons.menu),
+      leading: Builder(
+        builder: (context) {
+          IconButton(
+            onPressed: () => Scaffold.of(context).openDrawer(),
+            icon: const CircleAvatar(
+              backgroundImage: NetworkImage(NETWORKIMAGES.chatDp),
+            ),
+          );
+        },
+      ),
       expandedHeight: 200,
       pinned: true,
       // elevation: 10,
