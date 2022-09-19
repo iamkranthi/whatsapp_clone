@@ -1,5 +1,6 @@
 class APPIMAGES {
-  static const String logo = "assets/images";
+  static const String metalogo = 'assets/images/meta.png';
+  
    static const String drawer = 'assets/images/menu.png';
 }
 

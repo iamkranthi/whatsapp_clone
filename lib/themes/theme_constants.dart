@@ -22,8 +22,11 @@ class Themes {
     pageTransitionsTheme: const PageTransitionsTheme(builders: {
       TargetPlatform.android: CupertinoPageTransitionsBuilder(),
     }),
-    
+    dividerTheme: const DividerThemeData(
+      color: Colors.black,
+      thickness: 1,
+      
+    ),
+  
   );
-
-
 }

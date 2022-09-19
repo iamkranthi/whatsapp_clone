@@ -3,8 +3,8 @@ export 'package:whatsapp_clone/views/pages/home/home.dart'; //homepage
 export  'package:whatsapp_clone/views/pages/calls/calls_dedicated_page.dart';//calls page
 export 'package:whatsapp_clone/views/pages/chats/chats_dedicated_page.dart';//chats page
 export 'package:whatsapp_clone/models/chat_info.dart';//info model
-export 'package:whatsapp_clone/views/pages/chats/components/chats_view.dart';
-export 'package:whatsapp_clone/views/pages/chats/components/groups_view.dart';
+export 'package:whatsapp_clone/views/pages/chats/components/chats_view.dart';//chatsViwe
+export 'package:whatsapp_clone/views/pages/chats/components/groups_view.dart';//groups view
 
 export 'package:whatsapp_clone/views/pages/calls/components/calls_view.dart';
 
@@ -37,7 +37,7 @@ export 'package:whatsapp_clone/views/pages/home/components/status.dart';
 export 'package:whatsapp_clone/views/pages/home/components/title.dart';
 export 'package:whatsapp_clone/views/pages/home/components/flexible_space.dart';
 export 'package:whatsapp_clone/views/pages/home/components/silver_to_box.dart';
-
+export 'package:whatsapp_clone/views/pages/home/components/drawer.dart';//dawer
 
 
 

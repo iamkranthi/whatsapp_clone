@@ -43,6 +43,7 @@ dependencies:
   get_storage: ^2.0.3
   dotted_border: ^2.0.0+2
   google_nav_bar: ^5.0.6
+  qr_flutter: ^4.0.0
 
 dev_dependencies:
   flutter_test:
