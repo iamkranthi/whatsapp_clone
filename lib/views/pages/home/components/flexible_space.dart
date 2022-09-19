@@ -20,9 +20,7 @@ class FlexibleSpaceStatusBar extends StatelessWidget {
         builder: (context) {
           return IconButton(
             onPressed: () => Scaffold.of(context).openDrawer(),
-            icon: const CircleAvatar(
-              backgroundImage: NetworkImage(NETWORKIMAGES.chatDp),
-            ),
+            icon: Image.asset(APPIMAGES.drawer, height: 25),
           );
         },
       ),

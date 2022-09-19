@@ -1,5 +1,6 @@
 class APPIMAGES {
   static const String logo = "assets/images";
+  static const String drawer = 'assets/images/menu.png';
 }
 
 class SVGIMAGES {
