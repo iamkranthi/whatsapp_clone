@@ -5,15 +5,16 @@ export 'package:whatsapp_clone/views/pages/chats/chats_dedicated_page.dart';//ch
 export 'package:whatsapp_clone/models/chat_info.dart';//info model
 export 'package:whatsapp_clone/views/pages/chats/components/chats_view.dart';//chatsViwe
 export 'package:whatsapp_clone/views/pages/chats/components/groups_view.dart';//groups view
-
+export 'package:whatsapp_clone/views/pages/landing/screens/landing_screen.dart';
 export 'package:whatsapp_clone/views/pages/calls/components/calls_view.dart';
-
-
+export 'package:whatsapp_clone/views/pages/login/login.dart';
+export 'package:whatsapp_clone/views/pages/login/login.dart';
+export 'package:whatsapp_clone/views/widgets/error.dart';
 //*services
-export  'package:whatsapp_clone/services/theme_services.dart';
 
 
 
+export 'package:whatsapp_clone/routes/routes.dart';
 
 
 
@@ -32,6 +33,7 @@ export 'package:whatsapp_clone/views/widgets/bottom_bar.dart';
 export 'package:whatsapp_clone/views/widgets/rounded_contanier.dart';//roundedrectContanier widget
 export 'package:whatsapp_clone/views/widgets/rounded_rect_card.dart';//rounded card widget
 export 'package:whatsapp_clone/views/widgets/chat_cards.dart';
+export 'package:whatsapp_clone/views/widgets/custom_buton.dart';
 //*homeWidgets
 export 'package:whatsapp_clone/views/pages/home/components/status.dart';
 export 'package:whatsapp_clone/views/pages/home/components/title.dart';
@@ -56,3 +58,5 @@ export 'package:whatsapp_clone/views/pages/home/components/drawer.dart';//dawer
 
 export 'package:iconsax/iconsax.dart';//iconsax package//bootom nav bar
 export 'package:dotted_border/dotted_border.dart';//dotted border
+export 'package:firebase_core/firebase_core.dart';
+export  'package:whatsapp_clone/firebase_options.dart';

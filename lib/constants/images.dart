@@ -1,7 +1,7 @@
 class APPIMAGES {
   static const String metalogo = 'assets/images/meta.png';
-  
-   static const String drawer = 'assets/images/menu.png';
+  static const String landing = 'assets/images/landing.png';
+  static const String drawer = 'assets/images/menu.png';
 }
 
 class SVGIMAGES {
