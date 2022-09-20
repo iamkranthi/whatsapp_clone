@@ -4,7 +4,7 @@ const chats = [
     'message': 'Hey, how are you doing?',
     'time': '3:53 pm',
     'profilePic':
-        'https://avatars.githubusercontent.com/u/75005151?s=96&v=4',
+        'https://pbs.twimg.com/profile_images/1530263155347460097/mQtCLnMb_400x400.jpg',
         'stories':'https://beeproger.com/app/uploads/2021/03/wat-is-flutter-1056x750.png',
   },
   {
