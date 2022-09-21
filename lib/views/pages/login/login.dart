@@ -36,7 +36,7 @@ class _LoginScreenState extends State<LoginScreen> {
             ),
           
           ),
-          verticalSpacer(400),
+          
           SizedBox(
             width: size.width*0.25,
             child: CustomButton(hint: 'Next', onpressed: (){}))
